@@ -1,0 +1,52 @@
+
+{
+
+	"HTMLFileName":"ebook-test.html",
+	"expanded:images/cover.jpg":"nil",
+	"pref__general__AutoKeyframeProperties":"false",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+\
+   }},\
+\"Down-level\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"viewStartMs":"-76.916527239585",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
+	"symbol_stage":{
+		"dummyStageParentWidth":"1024px",
+		"element_${_cover}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"animationEnabled":"true",
+			"timelineColor":"0x50bd82"},
+		"dummyStageParentHeight":"652px",
+		"defaultStageParentWidth":"1024px",
+		"element_${_Rectangle}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767"},
+		"element_${_Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"defaultStageParentHeight":"652px"},
+	"TransitionIdCounter":"5",
+	"CompZoomFactor":"100",
+	"viewStartY":"0",
+	"pixelsPerMs":"0.065005534953829",
+	"usedBOM":"false",
+	"nextElementColorIndex":"4",
+	"stage-Default Timeline_playhead_ms":"9000",
+	"stage-Default Timeline_mark_ms":"-1",
+	"PreloadAudio":"auto",
+	"StageZoomFactor":"100"}
