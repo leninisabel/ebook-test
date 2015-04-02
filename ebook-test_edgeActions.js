@@ -13,6 +13,50 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {
       
       
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 7882, function(sym, e) {
+         // insert code here
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 9000, function(sym, e) {
+         // insert code here
+         sym.play();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_arrow-nav}", "touchstart", function(sym, e) {
+         // insert code to be run when a user touches the object (for touch devices only)
+         sym.play('page2');
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_arrow-nav}", "click", function(sym, e) {
+         // insert code for mouse click here
+         sym.play('page2');
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_arrow-nav-prev}", "touchstart", function(sym, e) {
+         // insert code to be run when a user touches the object (for touch devices only)
+         sym.playreverse('page2reverse');
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_arrow-nav-prev}", "click", function(sym, e) {
+         // insert code for mouse click here
+         sym.playreverse('page2reverse');
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
