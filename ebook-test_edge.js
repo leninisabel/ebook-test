@@ -19,13 +19,26 @@ var symbols = {
     minimumCompatibleVersion: "4.0.0",
     build: "4.0.0.359",
     baseState: "Base State",
-    scaleToFit: "width",
+    scaleToFit: "both",
     centerStage: "horizontal",
     initialState: "Base State",
     gpuAccelerate: false,
     resizeInstances: false,
     content: {
             dom: [
+            {
+                id: 'pg2-background2',
+                type: 'image',
+                rect: ['-39px', '49px','1129px','627px','auto', 'auto'],
+                fill: ["rgba(0,0,0,0)",im+"pg2-background.jpg",'0px','0px'],
+                transform: [[],[],[],['0.93164','0.93164']]
+            },
+            {
+                id: 'page2-copy',
+                type: 'image',
+                rect: ['28px', '98px','395px','182px','auto', 'auto'],
+                fill: ["rgba(0,0,0,0)",im+"page2-copy.png",'0px','0px']
+            },
             {
                 id: 'cover',
                 type: 'image',
@@ -116,6 +129,13 @@ var symbols = {
                 rect: ['0px', '0px','1024px','60px','auto', 'auto'],
                 fill: ["rgba(0,103,177,1.00)"],
                 stroke: [0,"rgba(0,0,0,1)","none"]
+            },
+            {
+                id: 'nav-intro',
+                display: 'none',
+                type: 'image',
+                rect: ['-18px', '-17px','1041px','122px','auto', 'auto'],
+                fill: ["rgba(0,0,0,0)",im+"nav-intro.png",'0px','0px']
             }],
             symbolInstances: [
 
@@ -123,13 +143,6 @@ var symbols = {
         },
     states: {
         "Base State": {
-            "${_cover-pic1}": [
-                ["style", "top", '63px'],
-                ["transform", "scaleY", '0.7219'],
-                ["transform", "scaleX", '0.7219'],
-                ["style", "opacity", '0'],
-                ["style", "left", '70px']
-            ],
             "${_cover}": [
                 ["style", "top", '0px'],
                 ["style", "height", '653px'],
@@ -137,11 +150,12 @@ var symbols = {
                 ["style", "left", '0px'],
                 ["style", "width", '1024px']
             ],
-            "${_cover-logo}": [
-                ["transform", "scaleX", '0.7219'],
-                ["style", "top", '533px'],
-                ["transform", "scaleY", '0.7219'],
-                ["style", "left", '811px']
+            "${_nav-intro}": [
+                ["style", "top", '-17px'],
+                ["style", "display", 'none'],
+                ["style", "height", '122px'],
+                ["style", "left", '-18px'],
+                ["style", "width", '1041px']
             ],
             "${_cover-title}": [
                 ["style", "top", '266px'],
@@ -150,19 +164,50 @@ var symbols = {
                 ["style", "opacity", '0.000000'],
                 ["style", "left", '0px']
             ],
+            "${_cover-logo}": [
+                ["transform", "scaleX", '0.7219'],
+                ["style", "top", '533px'],
+                ["transform", "scaleY", '0.7219'],
+                ["style", "left", '811px']
+            ],
+            "${_cover-pic7}": [
+                ["style", "top", '420px'],
+                ["transform", "scaleY", '0.7219'],
+                ["transform", "scaleX", '0.7219'],
+                ["style", "opacity", '0'],
+                ["style", "left", '786px']
+            ],
+            "${_arrow-nav}": [
+                ["style", "top", '280px'],
+                ["transform", "scaleY", '0.71735'],
+                ["style", "left", '953px'],
+                ["transform", "scaleX", '0.71735']
+            ],
+            "${_cover-pic6}": [
+                ["style", "top", '469px'],
+                ["transform", "scaleY", '0.7219'],
+                ["transform", "scaleX", '0.7219'],
+                ["style", "opacity", '0'],
+                ["style", "left", '520px']
+            ],
+            "${_Rectangle}": [
+                ["style", "height", '60px'],
+                ["style", "left", '0px'],
+                ["color", "background-color", 'rgba(0,103,177,1.00)']
+            ],
+            "${_cover-pic4}": [
+                ["style", "top", '63px'],
+                ["transform", "scaleY", '0.7219'],
+                ["transform", "scaleX", '0.7219'],
+                ["style", "opacity", '0'],
+                ["style", "left", '806px']
+            ],
             "${_cover-pic5}": [
                 ["style", "top", '383px'],
                 ["transform", "scaleY", '0.7219'],
                 ["transform", "scaleX", '0.7219'],
                 ["style", "opacity", '0'],
                 ["style", "left", '220px']
-            ],
-            "${_cover-pic2}": [
-                ["style", "top", '164px'],
-                ["transform", "scaleY", '0.7219'],
-                ["transform", "scaleX", '0.7219'],
-                ["style", "opacity", '0'],
-                ["style", "left", '264px']
             ],
             "${_arrow-nav-prev}": [
                 ["style", "top", '280px'],
@@ -178,18 +223,13 @@ var symbols = {
                 ["style", "opacity", '0'],
                 ["style", "left", '629px']
             ],
-            "${_cover-pic7}": [
-                ["style", "top", '420px'],
-                ["transform", "scaleY", '0.7219'],
-                ["transform", "scaleX", '0.7219'],
-                ["style", "opacity", '0'],
-                ["style", "left", '786px']
-            ],
-            "${_arrow-nav}": [
-                ["style", "top", '280px'],
-                ["transform", "scaleY", '0.71735'],
-                ["style", "left", '953px'],
-                ["transform", "scaleX", '0.71735']
+            "${_pg2-background2}": [
+                ["style", "top", '49px'],
+                ["transform", "scaleY", '0.93164'],
+                ["transform", "scaleX", '0.93164'],
+                ["style", "height", '627px'],
+                ["style", "left", '-39px'],
+                ["style", "width", '1129px']
             ],
             "${_Stage}": [
                 ["color", "background-color", 'rgba(255,255,255,1)'],
@@ -197,23 +237,24 @@ var symbols = {
                 ["style", "height", '652px'],
                 ["style", "overflow", 'hidden']
             ],
-            "${_Rectangle}": [
-                ["color", "background-color", 'rgba(0,103,177,1.00)'],
-                ["style", "height", '60px']
-            ],
-            "${_cover-pic4}": [
+            "${_cover-pic1}": [
                 ["style", "top", '63px'],
                 ["transform", "scaleY", '0.7219'],
                 ["transform", "scaleX", '0.7219'],
                 ["style", "opacity", '0'],
-                ["style", "left", '806px']
+                ["style", "left", '70px']
             ],
-            "${_cover-pic6}": [
-                ["style", "top", '469px'],
+            "${_page2-copy}": [
+                ["style", "top", '98px'],
+                ["style", "opacity", '0.000000'],
+                ["style", "left", '28px']
+            ],
+            "${_cover-pic2}": [
+                ["style", "top", '164px'],
                 ["transform", "scaleY", '0.7219'],
                 ["transform", "scaleX", '0.7219'],
                 ["style", "opacity", '0'],
-                ["style", "left", '520px']
+                ["style", "left", '264px']
             ]
         }
     },
@@ -221,22 +262,25 @@ var symbols = {
         "Default Timeline": {
             fromState: "Base State",
             toState: "",
-            duration: 9637,
+            duration: 10162,
             autoPlay: true,
             labels: {
                 "page2": 9000,
-                "page2reverse": 9637
+                "page2reverse": 10162
             },
             timeline: [
                 { id: "eid25", tween: [ "style", "${_cover-pic5}", "top", '403px', { fromValue: '383px'}], position: 5500, duration: 750 },
                 { id: "eid63", tween: [ "style", "${_cover-pic2}", "left", '-760px', { fromValue: '264px'}], position: 9000, duration: 637 },
                 { id: "eid26", tween: [ "style", "${_cover-pic5}", "opacity", '1', { fromValue: '0'}], position: 5500, duration: 750 },
                 { id: "eid13", tween: [ "style", "${_cover-pic2}", "top", '144px', { fromValue: '164px'}], position: 3126, duration: 791 },
+                { id: "eid74", tween: [ "style", "${_nav-intro}", "display", 'block', { fromValue: 'none'}], position: 9000, duration: 0 },
                 { id: "eid18", tween: [ "style", "${_cover-pic3}", "opacity", '1', { fromValue: '0'}], position: 3917, duration: 791 },
                 { id: "eid30", tween: [ "style", "${_cover-pic6}", "opacity", '1', { fromValue: '0'}], position: 6250, duration: 868 },
+                { id: "eid72", tween: [ "style", "${_page2-copy}", "opacity", '1', { fromValue: '0.000000'}], position: 9637, duration: 525 },
                 { id: "eid66", tween: [ "style", "${_cover-logo}", "left", '-213px', { fromValue: '811px'}], position: 9000, duration: 637 },
-                { id: "eid58", tween: [ "style", "${_cover-pic5}", "left", '-804px', { fromValue: '220px'}], position: 9000, duration: 637 },
                 { id: "eid67", tween: [ "style", "${_cover-pic4}", "left", '-218px', { fromValue: '806px'}], position: 9000, duration: 637 },
+                { id: "eid58", tween: [ "style", "${_cover-pic5}", "left", '-804px', { fromValue: '220px'}], position: 9000, duration: 637 },
+                { id: "eid70", tween: [ "style", "${_Rectangle}", "left", '-1025px', { fromValue: '0px'}], position: 9000, duration: 637 },
                 { id: "eid65", tween: [ "style", "${_cover-pic1}", "left", '-954px', { fromValue: '70px'}], position: 9000, duration: 637 },
                 { id: "eid64", tween: [ "style", "${_cover-title}", "left", '-1024px', { fromValue: '0px'}], position: 9000, duration: 637 },
                 { id: "eid14", tween: [ "style", "${_cover-pic2}", "opacity", '1', { fromValue: '0'}], position: 3126, duration: 791 },

@@ -20,13 +20,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 9000, function(sym, e) {
-         // insert code here
-         sym.play();
-
-      });
-      //Edge binding end
-
       Symbol.bindElementAction(compId, symbolName, "${_arrow-nav}", "touchstart", function(sym, e) {
          // insert code to be run when a user touches the object (for touch devices only)
          sym.play('page2');
@@ -43,16 +36,26 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_arrow-nav-prev}", "touchstart", function(sym, e) {
-         // insert code to be run when a user touches the object (for touch devices only)
-         sym.playreverse('page2reverse');
          
+         // Play the timeline backwards from a label or specific time. For example:
+         // sym.playReverse(500); or sym.playReverse("myLabel");
+         sym.playReverse("page2reverse");
 
       });
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_arrow-nav-prev}", "click", function(sym, e) {
-         // insert code for mouse click here
-         sym.playreverse('page2reverse');
+         
+         // Play the timeline backwards from a label or specific time. For example:
+         // sym.playReverse(500); or sym.playReverse("myLabel");
+         sym.playReverse("page2reverse");
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 10162, function(sym, e) {
+         // insert code here
+         sym.stop();
 
       });
       //Edge binding end
