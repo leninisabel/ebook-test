@@ -43,7 +43,7 @@ if(document.addEventListener ){
    window.attachEvent("onload", onDocLoaded );
 }
 
-   requiresSVG=false;
+   requiresSVG=true;
 
    doDelayLoad=false;
    htFallbacks={
@@ -59,7 +59,7 @@ if (AdobeEdge.bootstrapLoading) { signaledLoading = true; AdobeEdge.loadResource
 
 loadResources(aLoader, doDelayLoad);
 
-var plSTF="both",ctrPlS="horizontal",minPlW="0",maxPlW=undefined,plWidth="1024px",plHeight="652px";
+var plSTF="both",ctrPlS="horizontal",minPlW="0",maxPlW=undefined,plWidth="1024px",plHeight="712px";
 
 preContent={dom: [ ]};//simpleContent
 
