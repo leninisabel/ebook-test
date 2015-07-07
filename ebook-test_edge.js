@@ -370,6 +370,12 @@ var symbols = {
                 fill: ["rgba(0,0,0,0)",im+"nav-1.png",'0px','0px']
             },
             {
+                id: 'btn-intro',
+                type: 'rect',
+                rect: ['0', '58','auto','auto','auto', 'auto'],
+                cursor: ['pointer']
+            },
+            {
                 id: 'arrow-download-pdf',
                 type: 'image',
                 rect: ['14px', '-51px','358px','162px','auto', 'auto'],
@@ -442,6 +448,10 @@ var symbols = {
                 autoPlay: {
 
                 }
+            },
+            {
+                id: 'btn-intro',
+                symbolName: 'btn-intro'
             }
             ]
         },
@@ -454,13 +464,12 @@ var symbols = {
                 ["style", "cursor", 'pointer'],
                 ["style", "width", '95px']
             ],
-            "${_Rectangle2}": [
-                ["color", "background-color", 'rgba(255,255,255,1.00)'],
-                ["style", "top", '338px'],
-                ["style", "height", '93px'],
-                ["style", "clip", [0,555.513671875,93,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
-                ["style", "left", '464px'],
-                ["style", "width", '554px']
+            "${_page5-quote}": [
+                ["style", "top", '223px'],
+                ["transform", "scaleY", '0.93375'],
+                ["transform", "scaleX", '0.93375'],
+                ["style", "opacity", '0'],
+                ["style", "left", '554px']
             ],
             "${_nav-intro}": [
                 ["style", "top", '41px'],
@@ -476,29 +485,8 @@ var symbols = {
                 ["style", "opacity", '0.000000'],
                 ["style", "left", '0px']
             ],
-            "${_Rectangle2Copy5}": [
-                ["color", "background-color", 'rgba(255,255,255,1.00)'],
-                ["style", "top", '442px'],
-                ["style", "height", '113px'],
-                ["style", "clip", [0,213,113,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
-                ["style", "left", '660px'],
-                ["style", "width", '213px']
-            ],
-            "${_arrow-nav-prev-pg7}": [
-                ["style", "top", '370px'],
-                ["transform", "scaleY", '0.71735'],
-                ["transform", "rotateZ", '180deg'],
-                ["transform", "scaleX", '0.71735'],
-                ["style", "left", '-12px'],
-                ["style", "cursor", 'pointer'],
-                ["style", "display", 'none']
-            ],
-            "${_nav-1}": [
-                ["style", "top", '41px'],
-                ["style", "height", '122px'],
-                ["style", "opacity", '0.000000'],
-                ["style", "left", '-18px'],
-                ["style", "width", '1041px']
+            "${_btn-intro}": [
+                ["style", "cursor", 'pointer']
             ],
             "${_arrow-download-pdf}": [
                 ["style", "top", '-51px'],
@@ -523,19 +511,19 @@ var symbols = {
                 ["style", "opacity", '0'],
                 ["style", "left", '786px']
             ],
-            "${_arrow-nav}": [
-                ["style", "top", '368px'],
-                ["transform", "scaleY", '0.71735'],
-                ["transform", "scaleX", '0.71735'],
-                ["style", "left", '953px'],
-                ["style", "cursor", 'pointer']
-            ],
-            "${_page4-copy}": [
-                ["style", "top", '126px'],
-                ["transform", "scaleY", '0.81637'],
-                ["transform", "scaleX", '0.81637'],
+            "${_page7-community}": [
+                ["style", "top", '354px'],
+                ["transform", "scaleY", '0.87447'],
+                ["transform", "scaleX", '0.87447'],
                 ["style", "opacity", '0.000000'],
-                ["style", "left", '-39px']
+                ["style", "left", '-74px']
+            ],
+            "${_cover-pic6}": [
+                ["style", "top", '527px'],
+                ["transform", "scaleY", '0.7219'],
+                ["transform", "scaleX", '0.7219'],
+                ["style", "opacity", '0'],
+                ["style", "left", '520px']
             ],
             "${_page8-award}": [
                 ["style", "top", '58px'],
@@ -565,19 +553,28 @@ var symbols = {
                 ["style", "opacity", '0'],
                 ["style", "left", '70px']
             ],
-            "${_CW-life-cycle}": [
-                ["style", "top", '-187px'],
-                ["transform", "scaleY", '0.35917'],
-                ["transform", "scaleX", '0.35917'],
-                ["style", "opacity", '0.000000'],
-                ["style", "left", '-17px']
+            "${_Rectangle2}": [
+                ["color", "background-color", 'rgba(255,255,255,1.00)'],
+                ["style", "top", '338px'],
+                ["style", "height", '93px'],
+                ["style", "clip", [0,555.513671875,93,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+                ["style", "left", '464px'],
+                ["style", "width", '554px']
             ],
-            "${_page6-bg}": [
-                ["style", "top", '90px'],
-                ["transform", "scaleY", '0.83816'],
-                ["transform", "scaleX", '0.83816'],
+            "${_nav-4}": [
+                ["style", "top", '41px'],
+                ["style", "height", '122px'],
                 ["style", "opacity", '0.000000'],
-                ["style", "left", '-109px']
+                ["style", "left", '-18px'],
+                ["style", "width", '1041px']
+            ],
+            "${_Rectangle2Copy5}": [
+                ["color", "background-color", 'rgba(255,255,255,1.00)'],
+                ["style", "top", '442px'],
+                ["style", "height", '113px'],
+                ["style", "clip", [0,213,113,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+                ["style", "left", '660px'],
+                ["style", "width", '213px']
             ],
             "${_page5-4sections}": [
                 ["style", "top", '466px'],
@@ -586,12 +583,14 @@ var symbols = {
                 ["style", "opacity", '0.000000'],
                 ["style", "left", '535px']
             ],
-            "${_page5-bg}": [
-                ["style", "top", '57px'],
-                ["transform", "scaleY", '0.85809'],
-                ["transform", "scaleX", '0.85809'],
-                ["style", "opacity", '0.000000'],
-                ["style", "left", '-91px']
+            "${_arrow-nav-prev-pg7}": [
+                ["style", "top", '370px'],
+                ["transform", "scaleY", '0.71735'],
+                ["transform", "rotateZ", '180deg'],
+                ["transform", "scaleX", '0.71735'],
+                ["style", "left", '-12px'],
+                ["style", "cursor", 'pointer'],
+                ["style", "display", 'none']
             ],
             "${_cover-pic5}": [
                 ["style", "top", '441px'],
@@ -607,25 +606,26 @@ var symbols = {
                 ["style", "cursor", 'pointer'],
                 ["style", "width", '148px']
             ],
-            "${_arrow-nav-prev}": [
-                ["style", "top", '370px'],
-                ["transform", "scaleY", '0.71735'],
-                ["transform", "rotateZ", '180deg'],
-                ["transform", "scaleX", '0.71735'],
-                ["style", "display", 'none'],
+            "${_arrow-download-android2}": [
+                ["style", "top", '15px'],
+                ["style", "height", '30px'],
+                ["style", "left", '323px'],
                 ["style", "cursor", 'pointer'],
-                ["style", "left", '-12px']
+                ["style", "width", '142px']
             ],
-            "${_nav-4}": [
+            "${_nav-1}": [
                 ["style", "top", '41px'],
                 ["style", "height", '122px'],
                 ["style", "opacity", '0.000000'],
                 ["style", "left", '-18px'],
                 ["style", "width", '1041px']
             ],
-            "${_page4cloud}": [
-                ["style", "display", 'none'],
-                ["style", "opacity", '1']
+            "${_arrow-nav}": [
+                ["style", "top", '368px'],
+                ["transform", "scaleY", '0.71735'],
+                ["transform", "scaleX", '0.71735'],
+                ["style", "left", '953px'],
+                ["style", "cursor", 'pointer']
             ],
             "${_nav-3}": [
                 ["style", "top", '41px'],
@@ -633,6 +633,13 @@ var symbols = {
                 ["style", "opacity", '0.000000'],
                 ["style", "left", '-18px'],
                 ["style", "width", '1041px']
+            ],
+            "${_page4-copy}": [
+                ["style", "top", '126px'],
+                ["transform", "scaleY", '0.81637'],
+                ["transform", "scaleX", '0.81637'],
+                ["style", "opacity", '0.000000'],
+                ["style", "left", '-39px']
             ],
             "${_page5-successtip}": [
                 ["style", "top", '28px'],
@@ -647,12 +654,12 @@ var symbols = {
                 ["style", "height", '578px'],
                 ["style", "width", '1041px']
             ],
-            "${_page7-bus}": [
-                ["style", "top", '577px'],
-                ["style", "height", '63px'],
+            "${_CW-life-cycle}": [
+                ["style", "top", '-187px'],
+                ["transform", "scaleY", '0.35917'],
+                ["transform", "scaleX", '0.35917'],
                 ["style", "opacity", '0.000000'],
-                ["style", "left", '216px'],
-                ["style", "width", '135px']
+                ["style", "left", '-17px']
             ],
             "${_Rectangle2Copy4}": [
                 ["color", "background-color", 'rgba(255,255,255,1.00)'],
@@ -669,12 +676,12 @@ var symbols = {
                 ["style", "left", '0px'],
                 ["style", "width", '1024px']
             ],
-            "${_page7-community}": [
-                ["style", "top", '354px'],
-                ["transform", "scaleY", '0.87447'],
-                ["transform", "scaleX", '0.87447'],
+            "${_page6-bg}": [
+                ["style", "top", '90px'],
+                ["transform", "scaleY", '0.83816'],
+                ["transform", "scaleX", '0.83816'],
                 ["style", "opacity", '0.000000'],
-                ["style", "left", '-74px']
+                ["style", "left", '-109px']
             ],
             "${_clouds}": [
                 ["style", "top", '-1462px'],
@@ -712,12 +719,12 @@ var symbols = {
                 ["style", "opacity", '0'],
                 ["style", "left", '-28px']
             ],
-            "${_page5-quote}": [
-                ["style", "top", '223px'],
-                ["transform", "scaleY", '0.93375'],
-                ["transform", "scaleX", '0.93375'],
-                ["style", "opacity", '0'],
-                ["style", "left", '554px']
+            "${_page5-bg}": [
+                ["style", "top", '57px'],
+                ["transform", "scaleY", '0.85809'],
+                ["transform", "scaleX", '0.85809'],
+                ["style", "opacity", '0.000000'],
+                ["style", "left", '-91px']
             ],
             "${_cover-logo}": [
                 ["style", "top", '591px'],
@@ -731,6 +738,15 @@ var symbols = {
                 ["style", "left", '0px'],
                 ["style", "top", '0px']
             ],
+            "${_arrow-nav-prev}": [
+                ["style", "top", '370px'],
+                ["transform", "scaleY", '0.71735'],
+                ["transform", "rotateZ", '180deg'],
+                ["transform", "scaleX", '0.71735'],
+                ["style", "display", 'none'],
+                ["style", "cursor", 'pointer'],
+                ["style", "left", '-12px']
+            ],
             "${_page7-bike}": [
                 ["style", "top", '572px'],
                 ["style", "height", '69px'],
@@ -738,11 +754,12 @@ var symbols = {
                 ["style", "left", '748px'],
                 ["style", "width", '54px']
             ],
-            "${_Rectangle}": [
-                ["color", "background-color", 'rgba(0,103,177,1.00)'],
-                ["style", "height", '60px'],
-                ["style", "left", '0px'],
-                ["style", "top", '58px']
+            "${_page5-copy}": [
+                ["style", "top", '109px'],
+                ["transform", "scaleY", '0.86697'],
+                ["transform", "scaleX", '0.86697'],
+                ["style", "opacity", '0.000000'],
+                ["style", "left", '38px']
             ],
             "${_cover-pic4}": [
                 ["style", "top", '121px'],
@@ -772,12 +789,9 @@ var symbols = {
                 ["style", "opacity", '0.000000'],
                 ["style", "left", '-100px']
             ],
-            "${_page5-copy}": [
-                ["style", "top", '109px'],
-                ["transform", "scaleY", '0.86697'],
-                ["transform", "scaleX", '0.86697'],
-                ["style", "opacity", '0.000000'],
-                ["style", "left", '38px']
+            "${_page4cloud}": [
+                ["style", "display", 'none'],
+                ["style", "opacity", '1']
             ],
             "${_page7-scooter2}": [
                 ["style", "height", '65px'],
@@ -790,12 +804,12 @@ var symbols = {
                 ["style", "opacity", '1'],
                 ["style", "left", '-5758px']
             ],
-            "${_quote-frank-wright}": [
-                ["style", "top", '581px'],
-                ["transform", "scaleY", '0.88542'],
-                ["transform", "scaleX", '0.88542'],
-                ["style", "opacity", '0'],
-                ["style", "left", '1001px']
+            "${_page7-bus}": [
+                ["style", "top", '577px'],
+                ["style", "height", '63px'],
+                ["style", "opacity", '0.000000'],
+                ["style", "left", '216px'],
+                ["style", "width", '135px']
             ],
             "${_page2-copy}": [
                 ["style", "top", '156px'],
@@ -816,19 +830,18 @@ var symbols = {
                 ["style", "opacity", '0.000000'],
                 ["style", "left", '41px']
             ],
-            "${_cover-pic3}": [
-                ["style", "top", '155px'],
+            "${_cover-pic2}": [
+                ["style", "top", '222px'],
                 ["transform", "scaleY", '0.7219'],
                 ["transform", "scaleX", '0.7219'],
                 ["style", "opacity", '0'],
-                ["style", "left", '629px']
+                ["style", "left", '264px']
             ],
-            "${_cover-pic6}": [
-                ["style", "top", '527px'],
-                ["transform", "scaleY", '0.7219'],
-                ["transform", "scaleX", '0.7219'],
-                ["style", "opacity", '0'],
-                ["style", "left", '520px']
+            "${_Rectangle}": [
+                ["color", "background-color", 'rgba(0,103,177,1.00)'],
+                ["style", "height", '60px'],
+                ["style", "left", '0px'],
+                ["style", "top", '58px']
             ],
             "${_page7-bus2}": [
                 ["style", "height", '69px'],
@@ -842,19 +855,19 @@ var symbols = {
                 ["style", "height", '712px'],
                 ["style", "width", '1024px']
             ],
-            "${_cover-pic2}": [
-                ["style", "top", '222px'],
+            "${_quote-frank-wright}": [
+                ["style", "top", '581px'],
+                ["transform", "scaleY", '0.88542'],
+                ["transform", "scaleX", '0.88542'],
+                ["style", "opacity", '0'],
+                ["style", "left", '1001px']
+            ],
+            "${_cover-pic3}": [
+                ["style", "top", '155px'],
                 ["transform", "scaleY", '0.7219'],
                 ["transform", "scaleX", '0.7219'],
                 ["style", "opacity", '0'],
-                ["style", "left", '264px']
-            ],
-            "${_arrow-download-android2}": [
-                ["style", "top", '15px'],
-                ["style", "height", '30px'],
-                ["style", "left", '323px'],
-                ["style", "cursor", 'pointer'],
-                ["style", "width", '142px']
+                ["style", "left", '629px']
             ],
             "${_page7-scooter}": [
                 ["style", "top", '576px'],
@@ -873,6 +886,7 @@ var symbols = {
             autoPlay: true,
             labels: {
                 "page2": 9000,
+                "btn-intro": 10162,
                 "page3": 11500,
                 "page4": 16750,
                 "page4cloud": 23026,
@@ -1104,6 +1118,53 @@ var symbols = {
                 { id: "eid235", tween: [ "style", "${_page7-walker1}", "background-position", [-50.000000,0.000000], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0.000000,0.000000]}], position: 40960, duration: 0 },
                 { id: "eid236", tween: [ "style", "${_page7-walker1}", "background-position", [-100.000000,0.000000], { valueTemplate: '@@0@@px @@1@@px', fromValue: [-50.000000,0.000000]}], position: 41210, duration: 0 },
                 { id: "eid237", tween: [ "style", "${_page7-walker1}", "background-position", [-150,0], { valueTemplate: '@@0@@px @@1@@px', fromValue: [-100.000000,0.000000]}], position: 41460, duration: 0 }            ]
+        }
+    }
+},
+"btn-intro": {
+    version: "4.0.0",
+    minimumCompatibleVersion: "4.0.0",
+    build: "4.0.0.359",
+    baseState: "Base State",
+    scaleToFit: "none",
+    centerStage: "none",
+    initialState: "Base State",
+    gpuAccelerate: false,
+    resizeInstances: false,
+    content: {
+            dom: [
+                {
+                    rect: ['0px', '0px', '135px', '92px', 'auto', 'auto'],
+                    id: 'Rectangle3',
+                    stroke: [0, 'rgb(0, 0, 0)', 'none'],
+                    type: 'rect',
+                    fill: ['rgba(40,40,40,0.00)']
+                }
+            ],
+            symbolInstances: [
+            ]
+        },
+    states: {
+        "Base State": {
+            "${symbolSelector}": [
+                ["style", "height", '92px'],
+                ["style", "width", '135px']
+            ],
+            "${_Rectangle3}": [
+                ["color", "background-color", 'rgba(40,40,40,0.00)'],
+                ["style", "left", '0px'],
+                ["style", "top", '0px']
+            ]
+        }
+    },
+    timelines: {
+        "Default Timeline": {
+            fromState: "Base State",
+            toState: "",
+            duration: 0,
+            autoPlay: false,
+            timeline: [
+            ]
         }
     }
 }

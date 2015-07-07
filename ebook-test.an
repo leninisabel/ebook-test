@@ -13,8 +13,8 @@
 	"expanded:images/page4-cloud.png":"nil",
 	"expanded:images/page7-quote.png":"nil",
 	"expanded:images/page2-copy.png":"nil",
-	"nextElementColorIndex":"3",
-	"stage-Default Timeline_playhead_ms":"60012",
+	"nextElementColorIndex":"6",
+	"stage-Default Timeline_playhead_ms":"10162",
 	"expanded:images/cover-logo.png":"nil",
 	"HTMLFileName":"ebook-test.html",
 	"page4cloud-Default Timeline_playhead_ms":"0",
@@ -35,10 +35,15 @@
 	"expanded:images/nav-4.png":"nil",
 	"pref__general__FilterNonAnimatedElements":"false",
 	"expanded:images/nav-5.png":"nil",
+	"symbol_btn-intro":{
+		"element_${_Rectangle3}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"timelineColor":"0x50bd82"}},
 	"expanded:images/page8-copy.png":"nil",
 	"expanded:images/page7-walker1.png":"nil",
 	"expanded:images/page7-bus2.png":"nil",
-	"StageZoomFactor":"100",
+	"StageZoomFactor":"150",
 	"expanded:images/pg2-background.jpg":"nil",
 	"expanded:images/page7-bike.jpg":"nil",
 	"expanded:images/page7-copy.jpg":"nil",
@@ -68,8 +73,8 @@
 	"expanded:images/pg3-background.jpg":"nil",
 	"expanded:images/CW-life-cycle.png":"nil",
 	"expanded:images/page5-successtip.png":"nil",
-	"pixelsPerMs":"0.090062940061687",
-	"viewStartMs":"46501.564018921",
+	"pixelsPerMs":"0.023835810687584",
+	"viewStartMs":"-209.76840209961",
 	"usedBOM":"false",
 	"expanded:images/cover-pic7.png":"nil",
 	"symbol_stage":{
@@ -81,13 +86,15 @@
 		"element_${_nav-6}":{
 			"timelineColor2":"0x81aa62",
 			"timelineColor3":"0x5b6c4d",
-			"animationEnabled":"true",
-			"timelineColor":"0x91c767"},
+			"timelineColor":"0x91c767",
+			"locked":"true",
+			"animationEnabled":"true"},
 		"element_${_nav-3}":{
 			"timelineColor2":"0x326a96",
 			"timelineColor3":"0x385063",
-			"animationEnabled":"true",
-			"timelineColor":"0x2f73ad"},
+			"timelineColor":"0x2f73ad",
+			"locked":"true",
+			"animationEnabled":"true"},
 		"element_${_arrow-download}":{
 			"timelineColor2":"0xd35d6e",
 			"timelineColor3":"0x7e4b52",
@@ -310,6 +317,11 @@
 			"timelineColor2":"0xd8b467",
 			"timelineColor3":"0x81714f",
 			"timelineColor":"0xffd46d"},
+		"element_${_btn-intro}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"animationEnabled":"true",
+			"timelineColor":"0x00bda4"},
 		"element_${_cover-pic3}":{
 			"timelineColor2":"0x5a558a",
 			"timelineColor3":"0x4a485e",
@@ -317,6 +329,11 @@
 			"locked":"false",
 			"animationEnabled":"true",
 			"timelineTreeOpened":"false"},
+		"element_${_Rectangle3}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"animationEnabled":"false",
+			"timelineColor":"0x00a096"},
 		"element_${_page7-scooter}":{
 			"timelineColor2":"0x168c84",
 			"timelineColor3":"0x2a605c",
@@ -345,8 +362,9 @@
 		"element_${_nav-5}":{
 			"timelineColor2":"0xb099ce",
 			"timelineColor3":"0x70657c",
-			"animationEnabled":"true",
-			"timelineColor":"0xceaef4"},
+			"timelineColor":"0xceaef4",
+			"locked":"true",
+			"animationEnabled":"true"},
 		"dummyStageParentWidth":"1024px",
 		"element_${_cover-title}":{
 			"timelineColor2":"0x1aa38f",
@@ -400,8 +418,9 @@
 		"element_${_nav-4}":{
 			"timelineColor2":"0x5a558a",
 			"timelineColor3":"0x4a485e",
-			"animationEnabled":"true",
-			"timelineColor":"0x63599f"},
+			"timelineColor":"0x63599f",
+			"locked":"true",
+			"animationEnabled":"true"},
 		"dummyStageParentHeight":"712px",
 		"element_${_arrow-download-windows}":{
 			"timelineColor2":"0xcbbd71",
@@ -477,7 +496,8 @@
 			"timelineColor3":"0x7e4b52",
 			"timelineColor":"0xfb657a",
 			"timelineTreeOpened":"false",
-			"animationEnabled":"true"},
+			"animationEnabled":"true",
+			"locked":"true"},
 		"element_${_cover-pic6}":{
 			"timelineColor2":"0x326a96",
 			"timelineColor3":"0x385063",
@@ -518,6 +538,11 @@
    \"timelines\": {\
       \"Default Timeline\": {\
       }\
+   }},\
+\"btn-intro\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
    }}\
 }",
 	"expanded:images/nav-1.png":"nil",
@@ -527,9 +552,9 @@
 			"timelineColor3":"0x4a485e",
 			"animationEnabled":"true",
 			"timelineColor":"0x63599f"}},
-	"viewStartY":"56",
+	"viewStartY":"0",
 	"expanded:images/cover-pic6.png":"nil",
-	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
 	"TransitionIdCounter":"304",
 	"expanded:images/page4-copy.png":"nil",
 	"expanded:images/quote-frank-wright.png":"nil",

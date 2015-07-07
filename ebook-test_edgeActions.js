@@ -132,6 +132,16 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${_btn-intro}", "click", function(sym, e) {
+         // insert code for mouse click here
+         // Play the timeline at a label or specific time. For example:
+         // sym.play(500); or sym.play("myLabel");
+         sym.play('btn-intro');
+         
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
@@ -159,5 +169,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    })("walker1");
    //Edge symbol end:'walker1'
+
+   //=========================================================
+   
+   //Edge symbol: 'btn-intro'
+   (function(symbolName) {   
+   
+   })("btn-intro");
+   //Edge symbol end:'btn-intro'
 
 })(jQuery, AdobeEdge, "EDGE-74354979");
