@@ -373,8 +373,9 @@
 		"element_${_page7-copy}":{
 			"timelineColor2":"0x326a96",
 			"timelineColor3":"0x385063",
-			"animationEnabled":"true",
-			"timelineColor":"0x2f73ad"},
+			"timelineColor":"0x2f73ad",
+			"locked":"true",
+			"animationEnabled":"true"},
 		"element_${_arrow-download2}":{
 			"timelineColor2":"0xba5b89",
 			"timelineColor3":"0x734a5f",
@@ -526,9 +527,9 @@
 			"timelineColor3":"0x4a485e",
 			"animationEnabled":"true",
 			"timelineColor":"0x63599f"}},
-	"viewStartY":"296",
+	"viewStartY":"56",
 	"expanded:images/cover-pic6.png":"nil",
-	"pref__general__AutoKeyframePropertiesArmed":"true",
+	"pref__general__AutoKeyframePropertiesArmed":"false",
 	"TransitionIdCounter":"304",
 	"expanded:images/page4-copy.png":"nil",
 	"expanded:images/quote-frank-wright.png":"nil",

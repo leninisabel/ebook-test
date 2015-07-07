@@ -102,6 +102,36 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${_arrow-download-android2}", "click", function(sym, e) {
+         // insert code for mouse click here
+         // Navigate to a new URL in a new window
+         // (replace "_blank" with appropriate target attribute)
+         window.open("https://build.phonegap.com/apps/1538796/download/android", "_blank");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_arrow-download-windows2}", "click", function(sym, e) {
+         // insert code for mouse click here
+         // Navigate to a new URL in a new window
+         // (replace "_blank" with appropriate target attribute)
+         window.open("https://build.phonegap.com/apps/1538796/download/winphone", "_blank");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_arrow-download-pdf}", "click", function(sym, e) {
+         // insert code for mouse click here
+         // Navigate to a new URL in a new window
+         // (replace "_blank" with appropriate target attribute)
+         window.open("http://www.connectwise.com/~/media/748B50CCFE0B4731BAD4D1C2E8FFB2A2.pdf", "_blank");
+         
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
