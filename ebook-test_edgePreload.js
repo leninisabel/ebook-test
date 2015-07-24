@@ -43,7 +43,7 @@ if(document.addEventListener ){
    window.attachEvent("onload", onDocLoaded );
 }
 
-   requiresSVG=true;
+   requiresSVG=false;
 
    doDelayLoad=false;
    htFallbacks={
